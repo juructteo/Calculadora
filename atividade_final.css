@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+.fundo{
+    background-color: rgb(75, 22, 75);
+    height: 100vh;
+    color: white;
+    
+}
+.title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: 10px;
+    
+}
+.main{
+    position: absolute;
+    background-color: rgb(12, 15, 14, 0.8);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+}
+#n0{
+    margin-left: 54px;
+}
+.button{
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    margin: 3px;
+    cursor: pointer;
+    background-color: rgb(31,31, 31);
+    border: none;
+    color: white;
+}
+.button:hover{
+    background-color: black;
+}
+
+.textview{
+    width: 211px;
+    height: 30px;
+}
+#visor{
+    background-color: white;
+    width: 400px;
+    height: 50px;
+    margin: 5px;
+    font-size: 25px;
+    color: black;
+    text-align: right;
+}
+
+#historico{
+    padding: 5px;
+    border: 2px solid purple;
+    margin-left: 10px;
+    display: none;
+}

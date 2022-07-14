@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Final - Calculadora</title>
+    <script src="./atividade_final.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="atividade_final.css">
+</head>
+<body>
+    <div class="fundo">
+        <h1 class="title">Julia Téo</h1>
+        <div class="main">
+            <h1 class="title">Calculadora</h1>
+            <form name="formulario">
+                <p id="visor"></p>
+            </form>
+            <table >
+                <tr>
+                    <td><button class="button" onclick="sqrt()">√</button></td>
+                    <td><button class="button" onclick="insert('%')">%</button></td>
+                    <td><button class="button"onclick="pi()">𝛑</button></td>
+                    <td><button class="button" onclick="insert('*')">x</button></td>
+                    <td><button class="button" onclick="insert('/')">÷</button></td>
+                    <td><button class="button"onclick="insert('(')">(</button></td>
+                    <td><button class="button"onclick="insert(')')">)</button></td>
+                </tr>
+                <tr>
+                    <td><button class="button" onclick="insert('7')">7</button></td>
+                    <td><button class="button" onclick="insert('8')">8</button></td>
+                    <td><button class="button" onclick="insert('9')">9</button></td>
+                    <td><button class="button"onclick="insert('-')">-</button></td>
+                    <td colspan="2"><button class="button"style="width: 106px;" onclick="cos()">cos</button></td>
+                    <td><button class="button"onclick="insert('**')">x&#x207F;</button></td>
+
+                </tr>
+                <tr>
+                    <td><button class="button" onclick="insert('4')">4</button></td>
+                    <td><button class="button" onclick="insert('5')">5</button></td>
+                    <td><button class="button" onclick="insert('6')">6</button></td>
+                    <td><button class="button" onclick="insert('+')">+</button></td>
+                    <td colspan="2"><button class="button" style="width: 106px;" onclick="sen()">sen</button></td>
+                    <td rowspan="3"><button class="button" style="height: 150px;" onclick="myFunction()">Hist</button></td>
+                    
+                </tr>
+                <tr>
+                    <td><button class="button" onclick="insert('1')">1</button></td>
+                    <td><button class="button" onclick="insert('2')">2</button></td>
+                    <td><button class="button" onclick="insert('3')">3</button></td>
+                    <td rowspan="2"><button class="button" style="height: 106px;" onclick="equal()">=</button></td>
+                    <td colspan="2"><button class="button"style="width: 106px;"onclick="c()">C</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="button" style="width: 106px;"onclick="insert('0')">0</button></td>
+                    <td><button class="button"onclick="insert('.')">.</button></td>
+                    <td colspan="2"><button class="button"style="width: 106px;"onclick="back()"><</button></td>
+     
+                </tr>
+               
+            </table>
+           
+        </div>
+        <div >
+            <h1 class="title">Histórico calculadora </h1>
+            <p> <textarea name="historico" id="historico" cols="30" rows="10"></textarea>
+            </p>
+            
+        </div>
+    </div>
+    
+
+
+</body>
+</html>
